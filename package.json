@@ -1,6 +1,24 @@
 {
+  "name": "catalog",
+  "version": "1.0.0",
+  "description": "catalog service",
+  "main": "server.js",
+  "type": "commonjs",
   "dependencies": {
     "express": "^4.18.2",
     "mongoose": "^7.0.4"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayankindoliya/cataLog.git"
+  },
+  "author": "mayank indoliya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayankindoliya/cataLog/issues"
+  },
+  "homepage": "https://github.com/Mayankindoliya/cataLog#readme"
 }
