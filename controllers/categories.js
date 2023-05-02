@@ -1,8 +1,13 @@
 const Categories = require('../models/categories');
 
 class CategoriesController {
-  static async getCategories() {
-    const categories = await Categories.find({})
+  static async getCategories(query) {
+    let filter = {}
+    if(query.filter){
+       filter = JSON.parse(query.filter)
+    }
+    //  console.log(query)
+    const categories = await Categories.find(filter, query.projection)
     return categories
   };
 

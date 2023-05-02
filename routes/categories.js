@@ -3,7 +3,7 @@ const CategoriesController = require('../controllers/categories');
 const router = express.Router();
 
 router.get('/categories', (req, res, next) => {
-  CategoriesController.getCategories()
+  CategoriesController.getCategories(req.query)
     .then((data) => {
       res.json(data)
     })

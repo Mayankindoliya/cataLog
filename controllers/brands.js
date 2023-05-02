@@ -1,8 +1,9 @@
 const Brands = require('../models/brands');
 
 class BrandsController {
-  static async getBrands() {
-    const brands = await Brands.find({})
+  static async getBrands(query) {
+    const filter = JSON.parse(query.filter)
+    const brands = await Brands.find(filter, query.projection)
     return brands;
   }
 

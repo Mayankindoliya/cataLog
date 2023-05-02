@@ -5,7 +5,7 @@ const router = express.Router();
 const productController  = require('../controllers/products');
 
 router.get('/products', (req, res, next) => {
-  productController .getproducts()
+  productController .getproducts(req.query)
   .then((data) => {
     res.json(data)
   })

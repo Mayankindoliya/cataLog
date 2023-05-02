@@ -5,7 +5,7 @@ const BrandsController = require('../controllers/brands')
 
 
 router.get('/brands', (req, res, next) => {
-  BrandsController.getBrands()
+  BrandsController.getBrands(req.query)
     .then((data) => {
       res.json(data)
     })
