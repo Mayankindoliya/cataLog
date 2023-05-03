@@ -9,7 +9,8 @@
     "mongoose": "^7.0.4"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Mayankindoliya/cataLog/issues"
   },
-  "homepage": "https://github.com/Mayankindoliya/cataLog#readme"
+  "homepage": "https://github.com/Mayankindoliya/cataLog#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
